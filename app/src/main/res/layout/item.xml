@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/txtMarca"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        tools:text="Corona"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtVolume"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtVolume"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:text="1000"
+        android:textAlignment="center"
+        android:textColor="#1565c0"
+        app:layout_constraintEnd_toStartOf="@+id/txtValor"
+        app:layout_constraintStart_toEndOf="@+id/txtMarca"
+        app:layout_constraintTop_toTopOf="@id/txtMarca"
+
+        />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"
+        tools:text="5"
+        android:textAlignment="center"
+        android:textColor="#1565c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtVolume"
+        app:layout_constraintTop_toTopOf="@id/txtMarca"
+
+        />
+
+    />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
